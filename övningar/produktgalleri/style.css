@@ -1,0 +1,17 @@
+#gallery-container {
+    height: 100vh; /* Fyller hela skärmens höjd */
+    display: grid;
+    gap: 20px; /* Mellanrummet mellan alla boxar */
+    padding: 15px;
+
+    /* Definiera kolumnernas bredd: vänster, mitten, höger */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "header header header"
+    "t-left ccenter t-right"
+    "b-left ccenter b-right"
+    "buttom buttom buttom"
+    ;
+}
