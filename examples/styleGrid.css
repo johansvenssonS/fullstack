@@ -1,0 +1,52 @@
+.item {
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#item1 { 
+    background-color: green; 
+}
+
+#item2, #item3, #item5, #item6 { 
+    background-color: orange; 
+}
+
+#item4 { 
+    background-color: aqua; 
+}
+
+#item7 {
+    background-color: blue; 
+}
+
+
+/* --- GRID-LÖSNINGEN BÖRJAR HÄR --- */
+#parrent {
+    height: 100vh; /* Fyller hela skärmens höjd */
+    display: grid;
+    gap: 15px; /* Mellanrummet mellan alla boxar */
+    padding: 15px;
+
+    /* Definiera kolumnernas bredd: vänster, mitten, höger */
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "header header header"
+    "t-left ccenter t-right"
+    "b-left ccenter b-right"
+    "buttom buttom buttom"
+    ;
+}
+
+/* Placera ut varje box i sitt namngivna område */
+#item1 { grid-area: header; } 
+#item2 { grid-area: t-left; }
+#item3 { grid-area: b-left; }
+#item4 { grid-area: ccenter; }
+#item5 { grid-area: t-right; }
+#item6 { grid-area: b-right; }
+#item7 { grid-area: buttom; }
+

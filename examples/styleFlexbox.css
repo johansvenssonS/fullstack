@@ -1,0 +1,50 @@
+#parrent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+
+}
+
+#innerParrent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.innerInnerParrent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.innerInnerParrent div {
+    flex-grow: 1;
+}
+
+.item {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#item1 {
+    background-color: green;
+}
+
+ #item2, #item3,  #item5, #item6 {
+    background-color: orange;
+ }
+
+ #item4 {
+    background-color: aqua;
+ }
+
+ #item7 {
+    background-color: blue;
+ }
