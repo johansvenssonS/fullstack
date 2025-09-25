@@ -1,17 +1,21 @@
-#gallery-container {
-    height: 100vh; /* Fyller hela skärmens höjd */
+.gallery-container {
     display: grid;
-    gap: 20px; /* Mellanrummet mellan alla boxar */
+    gap: 20px; 
     padding: 15px;
-
-    /* Definiera kolumnernas bredd: vänster, mitten, höger */
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 
-    grid-template-areas: 
-    "header header header"
-    "t-left ccenter t-right"
-    "b-left ccenter b-right"
-    "buttom buttom buttom"
-    ;
+.product-card {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  
+}
+.product-card img {
+  max-width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  align-self: center;
 }
