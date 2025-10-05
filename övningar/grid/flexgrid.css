@@ -1,0 +1,48 @@
+body {
+  color: white;
+  background-color: #ababab;
+}
+
+#page-header,
+#page-footer {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-button {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: rgb(0, 85, 0);
+}

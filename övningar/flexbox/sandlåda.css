@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.gang {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.parent {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+  justify-content: space-between;
+}
+
+.parent2 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  border: 2px solid grey;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+/* word-break och columns går inte med flex */
+/*  */
+.child1 {
+  border: 2px solid grey;
+  padding: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+  word-break: break-word;
+  columns: 2;
+}
+
+.child2 {
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+.child3 {
+  display: flex;
+  padding: 10px;
+}
+
+.parent3 {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 500px;
+}

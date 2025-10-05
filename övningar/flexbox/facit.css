@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* 1. Containern som håller Main och Sidebar bredvid varandra */
+.parent {
+  display: flex;
+  border: 2px solid black;
+  /* Inget gap för att matcha bilden */
+}
+
+/* 2. Huvudinnehållet - Tar upp ALLT resterande utrymme OCH PLACERAS FÖRST */
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  flex-grow: 1;
+  /* NYCKEL: Sätter .main till att vara det första elementet */
+  order: 1;
+}
+
+/* 6. Sidofältet - Fast bredd OCH PLACERAS SIST */
+.sidebar {
+  display: flex;
+  border: 2px solid black;
+  width: 150px; /* Sätt en fast bredd */
+  justify-content: center;
+  align-items: center;
+  /* NYCKEL: Sätter .sidebar till att vara det sista elementet */
+  order: 2;
+}
+
+/* 3. Övre raden - Håller Textbox och Image bredvid varandra */
+.upper {
+  display: flex;
+  border: 2px solid black;
+}
+
+/* 4. Textbox och Image - Delar bredden lika */
+.textbox {
+  display: block;
+  border: 2px solid black;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  column-count: 2;
+  word-break: break-word;
+}
+.image {
+  display: flex;
+  border: 2px solid black;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 5. Nedre raden - Sprider ut länkarna */
+.lower {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 10px;
+}
+.lower .text {
+  display: block;
+}
