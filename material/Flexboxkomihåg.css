@@ -1,0 +1,45 @@
+/* ============================
+   FLEXBOX FUSKLAPP
+   ============================ */
+
+/* PARENT: flex-container */
+.parent {
+  display: flex;            /* aktiverar flex (eller inline-flex) */
+  flex-direction: row;      /* rad (default) | column | row-reverse | column-reverse */
+  
+  justify-content: flex-start; 
+  /* hur barn fördelas längs huvudaxeln:
+     flex-start | flex-end | center | space-between | space-around | space-evenly */
+  
+  align-items: stretch;     
+  /* hur barn justeras längs tväraxeln:
+     stretch (default) | flex-start | flex-end | center | baseline */
+  
+  flex-wrap: nowrap;        
+  /* radbrytning:
+     nowrap (default) | wrap | wrap-reverse */
+  
+  align-content: stretch;   
+  /* hur rader (om wrap används) fördelas:
+     flex-start | flex-end | center | space-between | space-around | stretch */
+}
+
+/* CHILD: flex-item */
+.child { as
+  flex: 0 1 auto;           
+  /* shorthand: flex-grow flex-shrink flex-basis */
+  /* ex: flex: 1;  (växer för att fylla utrymme jämnt) */
+  
+  flex-grow: 0;             /* får växa om utrymme finns */
+  flex-shrink: 1;           /* får krympa om det behövs */
+  flex-basis: auto;         /* grundstorlek: auto | px | % */
+  
+  align-self: auto;         
+  /* överstyr align-items för enskilt barn:
+     auto | flex-start | flex-end | center | baseline | stretch */
+  
+  order: 0;                 
+  /* ändra ordningen utan att flytta HTML: lägre nummer först */
+  
+  /* tips: margin-left: auto; kan knuffa ett barn längst åt höger */
+}

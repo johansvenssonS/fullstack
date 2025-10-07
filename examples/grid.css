@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  padding: 10px;
+}
+
+#parrent {
+  border: 2px solid black;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+
+  grid-template-areas:
+    "första andra andra"
+    "tredje fjärde fjärde"
+    "femte femte femte";
+}
+
+#box1 {
+  grid-area: första;
+  background-color: red;
+}
+
+#box2 {
+  grid-area: andra;
+  background-color: green;
+}
+#box3 {
+  grid-area: tredje;
+  background-color: rgb(0, 19, 128);
+}
+#box4 {
+  grid-area: fjärde;
+  background-color: rgb(0, 238, 255);
+}
+#box5 {
+  grid-area: femte;
+  background-color: rgb(231, 173, 13);
+}
