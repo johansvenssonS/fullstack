@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#topbox {
+  display: flex;
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: green;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+#botbox {
+  display: flex;
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: blue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 10px;
+}
+
+#boxS {
+  display: flex;
+  background-color: orange;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#box4 {
+  display: flex;
+  flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Webbplatsens Rubrik</h1>
+      <h3>Flexbox för kort-layouten, Grid för innehållet i korten</h3>
+    </header>
+    <div class="content">
+      <div class="card-container">
+        <div class="card">
+          <h3>Kort 1</h3>
+          <p>
+            Detta kort använder Grid för att strukturera sitt innehåll. Denna
+            text-sektion växer för att fylla utrymmet, vilket trycker ner
+            knappen.
+          </p>
+          <div class="card-footer">
+            <div class="button">Läs mer</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Kort 2</h3>
+          <p>
+            Här är lite mer text för att visa att korten blir lika höga, även
+            med olika mycket innehåll. Grid-layouten inuti kortet ser till att
+            knapparna alltid ligger i linje längst ner.
+          </p>
+          <div class="card-footer">
+            <div class="button">Läs mer</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Kort 3</h3>
+          <p>Kort text.</p>
+          <div class="card-footer">
+            <div class="button">Läs mer</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Kort 4</h3>
+          <p>Kortens behållare använder Flexbox med wrapping.</p>
+          <div class="card-footer">
+            <div class="button">Läs mer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2025 Webbplats AB</footer>
+  </body>
+</html>

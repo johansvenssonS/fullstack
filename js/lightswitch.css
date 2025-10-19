@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.dark-theme {
+  background-color: black;
+  color: aliceblue;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.color-choice {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-between;
+  padding: 5px;
+  flex-basis: 100px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  height: 300px;
+  width: 200px;
+}
+#yellow {
+  background-color: yellow;
+  color: black;
+}
+#red {
+  background-color: red;
+  color: black;
+}
+#blue {
+  background-color: blue;
+  color: black;
+}
+#green {
+  background-color: green;
+  color: black;
+}

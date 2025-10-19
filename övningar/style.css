@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.product-card img {
+  margin-top: 1rem;
+  max-height: 30%;
+  max-width: 30%;
+}
+
+.parent {
+  display: grid;
+  flex: 1 1 300px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: grey;
+}
+
+.box {
+  background-color: aqua;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". text .";
+  place-items: center;
+}
+
+.box span {
+  grid-area: text;
+}
+.box-4 {
+  grid-column: span 2;
+}
+
+.fbox {
+  background-color: bisque;
+  border: 2px solid black;
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box2 {
+  background-color: aquamarine;
+  padding: 20px;
+  margin: 10;
+}
+
+.settings {
+  flex: 1 1 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  color: black;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+  height: 50px;
+  width: 100px;
+}
