@@ -21,7 +21,7 @@ for (let i = 0; i < 5; i++) {
   console.log(art);
 }
 
-///egen lek "\n"
+// ///egen lek "\n"
 let star = "*";
 let row = "";
 
@@ -30,61 +30,46 @@ function createRow() {
     row += star;
   }
 }
-// let dist5 = "     ";
-// let dist3 = "   ";
+let dist5 = "     ";
+let dist3 = "   ";
 
-// createRow();
-// createH();
+createRow();
+createH();
 
-// console.log(row);
+function createH() {
+  let msg = "";
+  for (let i = 0; i < 8; i++) {
+    if (i === 3 || i === 4) {
+      msg += row + row + row + dist3 + row + row + dist5 + dist5 + row + "\n";
+      continue;
+    }
+    if (i === 0 || i === 7) {
+      msg += row + dist5 + row + dist3 + row + row;
+      if (i === 0) {
+        msg += dist5 + row + row; //J
+      } else {
+        msg += dist5 + row + "**";
+      }
+      msg += "\n";
+      continue;
+    }
+    if (i === 6) {
+      msg +=
+        row +
+        dist5 +
+        row +
+        dist3 +
+        row +
+        dist5 +
+        dist3 +
+        "***" +
+        dist3 +
+        row +
+        "\n";
+      continue;
+    }
 
-// function createH() {
-//   let msg = "";
-//   for (let i = 0; i < 8; i++) {
-//     if (i === 3 || i === 4) {
-//       msg += row + row + row + dist3 + row + row + dist5 + dist5 + row + "\n";
-//       continue;
-//     }
-//     if (i === 0 || i === 7) {
-//       msg += row + dist5 + row + dist3 + row + row;
-//       if (i === 0) {
-//         msg += dist5 + row + row; //J
-//       } else {
-//         msg += dist5 + row + "**";
-//       }
-//       msg += "\n";
-//       continue;
-//     }
-//     if (i === 6) {
-//       msg +=
-//         row +
-//         dist5 +
-//         row +
-//         dist3 +
-//         row +
-//         dist5 +
-//         dist3 +
-//         "***" +
-//         dist3 +
-//         row +
-//         "\n";
-//       continue;
-//     }
-
-//     msg += row + dist5 + row + dist3 + row + dist5 + dist5 + dist5 + row + "\n";
-//   }
-//   console.log(msg);
-// }
-
-// function createE(msg) { HEJ
-//   console.log(msg);
-// }
-
-// *****     *****   **********
-// *****     *****   *****
-// *****     *****   *****
-// ***************   **********
-// ***************   **********
-// *****     *****   *****
-// *****     *****   *****
-// *****     *****   **********
+    msg += row + dist5 + row + dist3 + row + dist5 + dist5 + dist5 + row + "\n";
+  }
+  console.log(msg);
+}
