@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 10px;
+  background-color: black;
+}
+.toDo {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background-color: yellow;
+}
